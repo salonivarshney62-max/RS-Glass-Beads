@@ -1,0 +1,703 @@
+/* ===========================
+   GOOGLE RESET
+=========================== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#f5f7fa;
+color:#222;
+line-height:1.7;
+overflow-x:hidden;
+}
+
+/* ===========================
+HEADER
+=========================== */
+
+header{
+
+position:fixed;
+top:0;
+left:0;
+width:100%;
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+padding:18px 8%;
+
+background:rgba(0,0,0,.75);
+backdrop-filter:blur(8px);
+
+z-index:999;
+
+}
+
+.logo h2{
+
+color:#FFD700;
+font-size:30px;
+font-weight:700;
+
+}
+
+nav a{
+
+color:#fff;
+text-decoration:none;
+margin-left:25px;
+font-weight:500;
+transition:.3s;
+
+}
+
+nav a:hover{
+
+color:#FFD700;
+
+}
+
+/* ===========================
+HERO
+=========================== */
+
+.hero{
+
+height:100vh;
+
+background:
+
+linear-gradient(rgba(0,0,0,.55),
+rgba(0,0,0,.55)),
+
+url("images/banner.jpg");
+
+background-size:cover;
+background-position:center;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+text-align:center;
+color:white;
+
+}
+
+.hero-content{
+
+animation:fade 1.5s;
+
+}
+
+.hero h1{
+
+font-size:65px;
+margin-bottom:20px;
+
+}
+
+.hero p{
+
+font-size:22px;
+max-width:700px;
+margin:auto;
+margin-bottom:35px;
+
+}
+
+/* ===========================
+BUTTON
+=========================== */
+
+.btn{
+
+display:inline-block;
+
+padding:15px 35px;
+
+background:#25D366;
+color:white;
+
+border-radius:40px;
+
+text-decoration:none;
+font-size:18px;
+
+transition:.4s;
+
+box-shadow:0 10px 25px rgba(0,0,0,.25);
+
+}
+
+.btn:hover{
+
+transform:translateY(-5px);
+box-shadow:0 15px 35px rgba(0,0,0,.35);
+
+}
+
+/* ===========================
+SECTION
+=========================== */
+
+section{
+
+padding:90px 8%;
+
+}
+
+section h2{
+
+text-align:center;
+font-size:40px;
+
+margin-bottom:40px;
+
+position:relative;
+
+}
+
+section h2::after{
+
+content:"";
+
+width:90px;
+height:4px;
+
+background:#FFD700;
+
+display:block;
+
+margin:10px auto;
+
+border-radius:10px;
+
+}
+
+#about p{
+
+max-width:900px;
+
+margin:auto;
+
+text-align:center;
+
+font-size:18px;
+
+color:#555;
+
+}
+
+/* ===========================
+PRODUCTS
+=========================== */
+
+.cards{
+
+display:grid;
+
+grid-template-columns:
+
+repeat(auto-fit,minmax(280px,1fr));
+
+gap:30px;
+
+margin-top:40px;
+
+}
+
+.card{
+
+background:white;
+
+border-radius:18px;
+
+overflow:hidden;
+
+box-shadow:0 15px 30px rgba(0,0,0,.12);
+
+transition:.4s;
+
+}
+
+.card:hover{
+
+transform:translateY(-12px);
+
+}
+
+.card img{
+
+width:100%;
+height:280px;
+
+object-fit:cover;
+
+}
+
+.card h3{
+
+padding-top:15px;
+
+text-align:center;
+
+font-size:24px;
+
+}
+
+.card p{
+
+text-align:center;
+
+color:#666;
+
+padding:10px;
+
+}
+/* ===========================
+ORDER BUTTON
+=========================== */
+
+.order-btn{
+
+display:block;
+width:80%;
+
+margin:20px auto;
+
+padding:12px;
+
+text-align:center;
+
+text-decoration:none;
+
+background:#FFD700;
+color:#111;
+
+font-weight:600;
+
+border-radius:30px;
+
+transition:.3s;
+
+}
+
+.order-btn:hover{
+
+background:#111;
+color:#fff;
+
+}
+
+/* ===========================
+GALLERY
+=========================== */
+
+.gallery{
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(250px,1fr));
+
+gap:20px;
+
+margin-top:30px;
+
+}
+
+.gallery img{
+
+width:100%;
+
+height:250px;
+
+object-fit:cover;
+
+border-radius:15px;
+
+transition:.4s;
+
+box-shadow:0 10px 25px rgba(0,0,0,.15);
+
+}
+
+.gallery img:hover{
+
+transform:scale(1.05);
+
+}
+
+/* ===========================
+REVIEWS
+=========================== */
+
+.review-box{
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(320px,1fr));
+
+gap:30px;
+
+}
+
+.review{
+
+background:white;
+
+padding:30px;
+
+border-radius:15px;
+
+text-align:center;
+
+box-shadow:0 10px 25px rgba(0,0,0,.10);
+
+transition:.4s;
+
+}
+
+.review:hover{
+
+transform:translateY(-10px);
+
+}
+
+.review p{
+
+margin:15px 0;
+
+color:#555;
+
+}
+
+.review h4{
+
+color:#FFD700;
+
+}
+
+/* ===========================
+CONTACT
+=========================== */
+
+#contact{
+
+text-align:center;
+
+background:#fff;
+
+}
+
+#contact p{
+
+margin:15px 0;
+
+font-size:18px;
+
+}
+
+.insta{
+
+display:inline-block;
+
+margin-top:25px;
+
+padding:15px 30px;
+
+background:#E1306C;
+
+color:white;
+
+text-decoration:none;
+
+border-radius:40px;
+
+transition:.3s;
+
+}
+
+.insta:hover{
+
+transform:scale(1.05);
+
+}
+
+/* ===========================
+FLOATING WHATSAPP
+=========================== */
+
+.whatsapp{
+
+position:fixed;
+
+right:20px;
+
+bottom:20px;
+
+width:65px;
+height:65px;
+
+background:#25D366;
+
+border-radius:50%;
+
+display:flex;
+
+justify-content:center;
+align-items:center;
+
+font-size:32px;
+
+color:white;
+
+text-decoration:none;
+
+box-shadow:0 10px 20px rgba(0,0,0,.25);
+
+z-index:999;
+
+transition:.3s;
+
+}
+
+.whatsapp:hover{
+
+transform:scale(1.12);
+
+}
+
+/* ===========================
+FOOTER
+=========================== */
+
+footer{
+
+background:#111;
+
+color:white;
+
+text-align:center;
+
+padding:25px;
+
+font-size:16px;
+
+}
+
+/* ===========================
+ANIMATION
+=========================== */
+
+@keyframes fade{
+
+from{
+
+opacity:0;
+transform:translateY(40px);
+
+}
+
+to{
+
+opacity:1;
+transform:translateY(0);
+
+}
+
+}
+/* ===========================
+   RESPONSIVE DESIGN
+=========================== */
+
+@media (max-width:991px){
+
+header{
+flex-direction:column;
+padding:15px;
+}
+
+.logo{
+margin-bottom:15px;
+}
+
+nav{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+nav a{
+margin:10px;
+font-size:16px;
+}
+
+.hero h1{
+font-size:45px;
+}
+
+.hero p{
+font-size:18px;
+padding:0 20px;
+}
+
+section{
+padding:70px 5%;
+}
+
+}
+
+/* Mobile */
+
+@media (max-width:768px){
+
+.hero{
+height:90vh;
+padding:20px;
+}
+
+.hero h1{
+font-size:35px;
+line-height:1.3;
+}
+
+.hero p{
+font-size:16px;
+}
+
+.btn{
+padding:13px 28px;
+font-size:16px;
+}
+
+.cards{
+grid-template-columns:1fr;
+}
+
+.gallery{
+grid-template-columns:1fr;
+}
+
+.review-box{
+grid-template-columns:1fr;
+}
+
+.card img{
+height:240px;
+}
+
+.gallery img{
+height:220px;
+}
+
+section h2{
+font-size:30px;
+}
+
+#contact p{
+font-size:16px;
+}
+
+}
+
+/* Small Mobile */
+
+@media (max-width:480px){
+
+.hero h1{
+font-size:28px;
+}
+
+.hero p{
+font-size:15px;
+}
+
+.logo h2{
+font-size:24px;
+}
+
+nav a{
+font-size:14px;
+margin:8px;
+}
+
+.btn{
+padding:12px 22px;
+font-size:15px;
+}
+
+.whatsapp{
+width:55px;
+height:55px;
+font-size:28px;
+right:15px;
+bottom:15px;
+}
+
+footer{
+font-size:14px;
+}
+
+}
+
+/* ===========================
+   SCROLLBAR
+=========================== */
+
+::-webkit-scrollbar{
+width:8px;
+}
+
+::-webkit-scrollbar-track{
+background:#f1f1f1;
+}
+
+::-webkit-scrollbar-thumb{
+background:#FFD700;
+border-radius:10px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+background:#d4af37;
+}
+
+/* ===========================
+   EXTRA EFFECTS
+=========================== */
+
+.card,
+.review,
+.gallery img,
+.btn,
+.order-btn,
+.insta,
+.whatsapp{
+transition:all .4s ease;
+}
+
+.card:hover{
+box-shadow:0 20px 40px rgba(0,0,0,.18);
+}
+
+.review:hover{
+box-shadow:0 20px 40px rgba(0,0,0,.18);
+}
+
+.gallery img:hover{
+filter:brightness(105%);
+}
+
+html{
+scroll-behavior:smooth;
+}
